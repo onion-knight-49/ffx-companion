@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FFX Arena Companion</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Final Fantasy X Arena Companion App!</h1>
+    <h2>Besaid</h2>
+    <div class="area" id="besaid">
+      <div class="fiend" id="dingo" data-count="3">
+        <h3 class="name">Dingo</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="dingoValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="condor" data-count="5">
+        <h3 class="name">Condor</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="condorValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Bird</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Bird.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="waterFlan" data-count="3">
+        <h3 class="name">Water Flan</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="waterFlanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Flan</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Flan.png" />
+          </div>
+        </div>
+      </div>
+      <div class="area-conquest" id="besaidConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Kilika</h2>
+    <div class="area" id="kilika">
+      <div class="fiend" id="dinonix" data-count="3">
+        <h3 class="name">Dinonix</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="dinonixValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="killerBee" data-count="4">
+        <h3 class="name">Killer Bee</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="killerBeeValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Insect</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Insect.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="yellowElement" data-count="3">
+        <h3 class="name">Yellow Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="yellowElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="ragora" data-count="0">
+        <h3 class="name">Ragora</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ragoraValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="kilikaConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Mi'ihen Highroad</h2>
+    <div class="area" id="miihenHighroad">
+      <div class="fiend" id="miihenFang" data-count="3">
+        <h3 class="name">Mi'ihen Fang</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="miihenFangValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="ipiria" data-count="3">
+        <h3 class="name">Ipiria</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ipiriaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="floatingEye" data-count="4">
+        <h3 class="name">Floating Eye</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="floatingEyeValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Eye</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Eye.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="whiteElement" data-count="3">
+        <h3 class="name">White Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="whiteElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="raldo" data-count="3">
+        <h3 class="name">Raldo</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="raldoValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Armored Helm</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Armored Helm.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="vouivre" data-count="4">
+        <h3 class="name">Vouivre</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="vouivreValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Drake</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Drake.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="bomb" data-count="5">
+        <h3 class="name">Bomb</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="bombValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Bomb</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Bomb.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="dualHorn" data-count="5">
+        <h3 class="name">Dual Horn</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="dualHornValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Horned</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Horned.png" />
+          </div>
+        </div>
+      </div>
+      <div class="area-conquest" id="miihenHighroadConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Mushroom Rock Road</h2>
+    <p class="note">*Raptor and Lamashtu can also be encountered on "Djose Road".</p>
+    <p class="note">**Gandarewa and Funguar can also be encountered on "Djose Road" and rarely on "Moonflow - South Bank Road".</p>
+    <p class="lastNote">***Thunder Flan can also be encountered on Mi'ihen Highroad, most often on "Highroad - Oldroad, North".</p>
+    <div class="area" id="mushroomRockRoad">
+      <div class="fiend" id="raptor" data-count="3">
+        <h3 class="name">Raptor*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="raptorValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="gandarewa" data-count="4">
+        <h3 class="name">Gandarewa**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="gandarewaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Imp</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Imp.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="thunderFlan" data-count="3">
+        <h3 class="name">Thunder Flan***</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="thunderFlanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Flan</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Flan.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="redElement" data-count="3">
+        <h3 class="name">Red Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="redElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="lamashtu" data-count="4">
+        <h3 class="name">Lamashtu*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="lamashtuValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Drake</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Drake.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="funguar" data-count="5">
+        <h3 class="name">Funguar**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="funguarValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Fungus</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Fungus.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="garuda" data-count="0">
+        <h3 class="name">Garuda</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="garudaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="mushroomRockRoadConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Djose Road</h2>
+    <p class="note">*Garm, Bite Bug, Snow Flan, and Bunyip can also be encountered on "Moonflow - South Bank Road" which is included in "Djose Road" area. (Go left at the fork at the end of Djose Road).</p>
+    <p class="lastNote">**Ochu can ONLY be encountered on "Moonflow - South Bank Road".</p>
+    <div class="area" id="djoseRoad">
+      <div class="fiend" id="garm" data-count="3">
+        <h3 class="name">Garm*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="garmValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="simurgh" data-count="5">
+        <h3 class="name">Simurgh</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="simurghValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Bird</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Bird.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="biteBug" data-count="4">
+        <h3 class="name">Bite Bug*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="biteBugValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Insect</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Insect.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="snowFlan" data-count="3">
+        <h3 class="name">Snow Flan*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="snowFlanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Flan</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Flan.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="bunyip" data-count="3">
+        <h3 class="name">Bunyip*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="bunyipValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Armored Helm</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Armored Helm.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="basilisk" data-count="0">
+        <h3 class="name">Basilisk</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="basiliskValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="ochu" data-count="0">
+        <h3 class="name">Ochu**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ochuValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="djoseRoadConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Thunder Plains</h2>
+    <div class="area" id="thunderPlains">
+      <div class="fiend" id="melusine" data-count="3">
+        <h3 class="name">Melusine</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="melusineValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="aerouge" data-count="4">
+        <h3 class="name">Aerouge</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="aerougeValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Imp</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Imp.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="buer" data-count="4">
+        <h3 class="name">Buer</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="buerValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Eye</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Eye.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="goldElement" data-count="3">
+        <h3 class="name">Gold Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="goldElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="kusariqqu" data-count="4">
+        <h3 class="name">Kusariqqu</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="kusariqquValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Drake</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Drake.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="larva" data-count="0">
+        <h3 class="name">Larva</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="larvaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="ironGiant" data-count="10">
+        <h3 class="name">Iron Giant</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ironGiantValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Iron Giant</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Iron Giant.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="qactuar" data-count="0">
+        <h3 class="name">Qactuar</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="qactuarValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="thunderPlainsConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Macalania</h2>
+    <p class="lastNote">"Lake Macalania" is included in the "Macalania" area.</p>
+    <div class="area" id="macalania">
+      <div class="fiend" id="snowWolf" data-count="3">
+        <h3 class="name">Snow Wolf</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="snowWolfValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="iguion" data-count="3">
+        <h3 class="name">Iguion</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="iguionValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="wasp" data-count="4">
+        <h3 class="name">Wasp</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="waspValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Insect</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Insect.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="evilEye" data-count="4">
+        <h3 class="name">Evil Eye</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="evilEyeValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Eye</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Eye.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="iceFlan" data-count="3">
+        <h3 class="name">Ice Flan</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="iceFlanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Flan</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Flan.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="blueElement" data-count="3">
+        <h3 class="name">Blue Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="blueElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="murussu" data-count="3">
+        <h3 class="name">Murussu</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="murussuValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Armored Helm</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Armored Helm.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="mafdet" data-count="3">
+        <h3 class="name">Mafdet</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="mafdetValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Armored Helm</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Armored Helm.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="xiphos" data-count="0">
+        <h3 class="name">Xiphos</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="xiphosValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="chimera" data-count="0">
+        <h3 class="name">Chimera</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="chimeraValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="macalaniaConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Bikanel</h2>
+    <div class="area" id="bikanel">
+      <div class="fiend" id="sandWolf" data-count="3">
+        <h3 class="name">Sand Wolf</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="sandWolfValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="alcyone" data-count="5">
+        <h3 class="name">Alcyone</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="alcyoneValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Bird</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Bird.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="mushussu" data-count="4">
+        <h3 class="name">Mushussu</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="mushussuValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Drake</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Drake.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="zuu" data-count="0">
+        <h3 class="name">Zuu</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="zuuValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="sandWorm" data-count="0">
+        <h3 class="name">Sand Worm</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="sandWormValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="cactuar" data-count="0">
+        <h3 class="name">Cactuar</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="cactuarValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="bikanelConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Calm Lands</h2>
+    <div class="area" id="calmLands">
+      <div class="fiend" id="skoll" data-count="3">
+        <h3 class="name">Skoll</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="skollValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="nebiros" data-count="4">
+        <h3 class="name">Nebiros</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="nebirosValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Insect</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Insect.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="flameFlan" data-count="3">
+        <h3 class="name">Flame Flan</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="flameFlanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Flan</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Flan.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="shred" data-count="3">
+        <h3 class="name">Shred</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="shredValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Armored Helm</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Armored Helm.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="anacondaur" data-count="0">
+        <h3 class="name">Anacondaur</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="anacondaurValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="ogre" data-count="0">
+        <h3 class="name">Ogre</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ogreValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="coeurl" data-count="0">
+        <h3 class="name">Coeurl</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="coeurlValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="chimeraBrain" data-count="0">
+        <h3 class="name">Chimera Brain</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="chimeraBrainValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="malboro" data-count="0">
+        <h3 class="name">Malboro</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="malboroValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="calmLandsConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Stolen Fayth Cavern</h2>
+    <p class="note">This area is labled as "Sunken Cave" in the English version of the game that was released before the HD Remaster version for PS3 and PS4.</p>
+    <p class="note">*Imp and Nidhogg can also be encountered on Mt. Gagazet.</p>
+    <p class="lastNote">**Epaaj can be encountered inside the cavern however, it is more frequently encountered in the area just outside of the cavern in "Calm Lands - Gorge Bottom".</p>
+    <div class="area" id="stolenFaythCavern">
+      <div class="fiend" id="yowie" data-count="3">
+        <h3 class="name">Yowie</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="yowieValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="imp" data-count="4">
+        <h3 class="name">Imp*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="impValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Imp</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Imp.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="darkElement" data-count="3">
+        <h3 class="name">Dark Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="darkElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="nidhogg" data-count="4">
+        <h3 class="name">Nidhogg*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="nidhoggValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Drake</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Drake.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="thorn" data-count="5">
+        <h3 class="name">Thorn</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="thornValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Fungus</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Fungus.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="valaha" data-count="5">
+        <h3 class="name">Valaha</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="valahaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Horned</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Horned.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="epaaj" data-count="0">
+        <h3 class="name">Epaaj**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="epaajValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="ghost" data-count="0">
+        <h3 class="name">Ghost</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ghostValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="tonberry" data-count="0">
+        <h3 class="name">Tonberry</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="tonberryValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="stolenFaythCavernConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Mt. Gagazet</h2>
+    <p class="note">*Ahriman, Dark Flan, Mandragora, and Behemoth can't be encountered on "Gagazet - Mountain Trail". They can only be encountered in "Gagazet - Mountain Cave" and on "Zanarkand Ruins - Overpass".</p>
+    <p class="note">**Splasher, Achelous, and Maelspike can ONLY be encountered in the water found in "Gagazet - Mountain Cave".</p>
+    <p class="lastNote">**NOTE: Since you are swimming in the water, these three fiends can only be captured by Tidus, Wakka, or Rikku.</p>
+    <div class="area" id="mtGagazet">
+      <div class="fiend" id="bandersnatch" data-count="3">
+        <h3 class="name">Bandersnatch</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="bandersnatchValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Wolf</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Wolf.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="ahriman" data-count="4">
+        <h3 class="name">Ahriman*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="ahrimanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Eye</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Eye.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="darkFlan" data-count="3">
+        <h3 class="name">Dark Flan*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="darkFlanValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Flan</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Flan.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="grenade" data-count="5">
+        <h3 class="name">Grenade</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="grenadeValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Bomb</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Bomb.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="grat" data-count="0">
+        <h3 class="name">Grat</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="gratValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="grendel" data-count="5">
+        <h3 class="name">Grendel</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="grendelValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Horned</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Horned.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="bashura" data-count="0">
+        <h3 class="name">Bashura</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="bashuraValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="mandragora" data-count="0">
+        <h3 class="name">Mandragora*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="mandragoraValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="behemoth" data-count="0">
+        <h3 class="name">Behemoth*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="behemothValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="splasher" data-count="0">
+        <h3 class="name">Splasher**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="splasherValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="achelous" data-count="0">
+        <h3 class="name">Achelous**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="achelousValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="maelspike" data-count="0">
+        <h3 class="name">Maelspike**</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="maelspikeValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="mtGagazetConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Inside Sin</h2>
+    <p class="lastNote">*Wraith, Gemini, Demonolith, Great Malboro, and Adamantoise can also be encountered in Omega Dungeon.</p>
+    <div class="area" id="insideSin">
+      <div class="fiend" id="exoray" data-count="5">
+        <h3 class="name">Exoray</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="exorayValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Fungus</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Fungus.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="wraith" data-count="0">
+        <h3 class="name">Wraith*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="wraithValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="geminiA" data-count="10">
+        <h3 class="name">Gemini* (armed with sword)</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="geminiAValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Iron Giant</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Iron Giant.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="geminiB" data-count="10">
+        <h3 class="name">Gemini* (armed with club)</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="geminiBValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Iron Giant</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Iron Giant.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="demonolith" data-count="0">
+        <h3 class="name">Demonolith*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="demonolithValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="greatMalboro" data-count="0">
+        <h3 class="name">Great Malboro*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="greatMalboroValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="barbatos" data-count="0">
+        <h3 class="name">Barbatos</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="barbatosValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="adamantoise" data-count="0">
+        <h3 class="name">Adamantoise*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="adamantoiseValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="behemothKing" data-count="0">
+        <h3 class="name">Behemoth King</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="behemothKingValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="insideSinConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Omega Dungeon</h2>
+    <p class="lastNote">*Varuna can also be encountered Inside Sin.</p>
+    <div class="area" id="omegaDungeon">
+      <div class="fiend" id="zaurus" data-count="3">
+        <h3 class="name">Zaurus</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="zaurusValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Lizard</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Lizard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="floatingDeath" data-count="4">
+        <h3 class="name">Floating Death</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="floatingDeathValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Eye</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Eye.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="blackElement" data-count="3">
+        <h3 class="name">Black Element</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="blackElementValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Element</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Element.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="halma" data-count="3">
+        <h3 class="name">Halma</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="halmaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Armored Helm</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Armored Helm.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="puroboros" data-count="5">
+        <h3 class="name">Puroboros</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="puroborosValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Bomb</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Bomb.png" />
+          </div>
+        </div>
+      </div>
+      <div class="fiend" id="spirit" data-count="0">
+        <h3 class="name">Spirit</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="spiritValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="machea" data-count="0">
+        <h3 class="name">Machea</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="macheaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="masterCoeurl" data-count="0">
+        <h3 class="name">Master Coeurl</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="masterCoeurlValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="masterTonberry" data-count="0">
+        <h3 class="name">Master Tonberry</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="masterTonberryValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="fiend" id="varuna" data-count="0">
+        <h3 class="name">Varuna*</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="varunaValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>
+      <div class="area-conquest" id="omegaDungeonConquest">
+        <h3 class="name">Area Conquest Completion</h3>
+        <div class="conquest-completion">
+          <input type="text" value="" class="checkBox" />
+          <svg class="check" viewBox="-10 -10 300 300">
+            <path
+              class="check-inner"
+              d="M86.8,135L193.5,2.9c1.1-1.6,2.5-2.5,4.4-2.8c1.9-0.3,3.6,0.1,5.1,1.2c1.6,1.1,2.5,2.5,2.8,4.3c0.3,1.8-0.1,3.5-1.2,5
+       c-59.2,105.6-93.8,163.6-103.9,173.8c-12.7,12.7-25.5,12-38.2-2.3L2.2,105.4c-1.7-2.2-2.4-4.7-2.1-7.5c0.3-2.8,1.5-5.1,3.7-6.8
+       l16.5-13c2.2-1.7,4.7-2.4,7.5-2.1c2.8,0.3,5,1.6,6.5,3.7l43.6,55c1.1,1.2,2.6,1.9,4.4,1.9C84.2,136.6,85.7,136.1,86.8,135z"
+            />
+          </svg>
+        </div>
+        <div class="species-progress">
+          <h3 class="conquest-complete" id="conquestCompleteIndicator">
+            Incomplete
+          </h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Area Conquest</h2>
+    <div class="conquestFiend" id="stratoavis" data-count="0">
+      <h3 class="name">Stratoavis</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Besaid.</p>
+        <p class="info">Unlock Reward: Stamina Tonic x99</p>
+        <p class="info">Loot Drop: Amulet x2 (x4 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="malboroMenace" data-count="0">
+      <h3 class="name">Malboro Menace</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Kilika.</p>
+        <p class="info">Unlock Reward: Poison Fang x99</p>
+        <p class="info">Loot Drop: Mana Tonic x2 (x4 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="kottos" data-count="0">
+      <h3 class="name">Kottos</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Mi'ihen Highroad.</p>
+        <p class="info">Unlock Reward: Soul Spring x99</p>
+        <p class="info">Loot Drop: Healing Spring x20 (x40 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="coeurlregina" data-count="0">
+      <h3 class="name">Coeurlregina</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Mushroom Rock Road.</p>
+        <p class="info">Unlock Reward: Candle of Life x99</p>
+        <p class="info">Loot Drop: Shining Gem x3 (x6 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="jormungand" data-count="0">
+      <h3 class="name">Jormungand</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Djose Road.</p>
+        <p class="info">Unlock Reward: Petrify Grenade x99</p>
+        <p class="info">Loot Drop: Supreme Gem x2 (x4 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="cactuarKing" data-count="0">
+      <h3 class="name">Cactuar King</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Thunder Plains.</p>
+        <p class="info">Unlock Reward: Chocobo King x99</p>
+        <p class="info">Loot Drop: Blessed Gem x3 (x6 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="espada" data-count="0">
+      <h3 class="name">Espada</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Macalania.</p>
+        <p class="info">Unlock Reward: Shining Gem x60</p>
+        <p class="info">Loot Drop: Rename Card x1 (x2 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="abyssWorm" data-count="0">
+      <h3 class="name">Abyss Worm</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Bikanel.</p>
+        <p class="info">Unlock Reward: Shadow Gem x99</p>
+        <p class="info">Loot Drop: Stamina Tonic x1 (x2 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="chimerageist" data-count="0">
+      <h3 class="name">Chimerageist</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Calm Lands.</p>
+        <p class="info">Unlock Reward: Farplane Wind x60</p>
+        <p class="info">Loot Drop: Return Sphere x1 (x2 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="donTonberry" data-count="0">
+      <h3 class="name">Don Tonberry</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Stolen Fayth Cavern.</p>
+        <p class="info">Unlock Reward: Silver Hourglass x40</p>
+        <p class="info">Loot Drop: Farplane Wind x3 (x6 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="catoblepas" data-count="0">
+      <h3 class="name">Catoblepas</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Mt. Gagazet.</p>
+        <p class="info">Unlock Reward: Blossom Crown</p>
+        <p class="info">Loot Drop: Three Stars x1 (x2 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="abaddon" data-count="0">
+      <h3 class="name">Abaddon</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Inside Sin.</p>
+        <p class="info">Unlock Reward: Lunar Curtain x99</p>
+        <p class="info">Loot Drop: Mana Tablet x1 (x2 for overkill)</p>
+      </div>
+    </div>
+    <div class="conquestFiend" id="vorban" data-count="0">
+      <h3 class="name">Vorban</h3>
+      <div class="fiendInfo">
+        <p class="info">Unlock Conditions: Capture at least one of every fiend from Omega Ruins.</p>
+        <p class="info">Unlock Reward: Designer Wallet x60</p>
+        <p class="info">Loot Drop: Friend Sphere x1 (x2 for overkill)</p>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+  <script src="fiends.js"></script>
+</html>
+
+<!--  <div class="fiend" id="mushussu" data-count="4">
+        <h3 class="name">mushussu</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="mushussuValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species">Drake</h3>
+          <div class="icon">
+            <div class="container" id="container"></div>
+            <img class="fiend-img" src="images/Drake.png" />
+          </div>
+        </div>
+      </div>  -->
+
+<!--  <div class="fiend" id="cactuar" data-count="0">
+        <h3 class="name">cactuar</h3>
+        <div class="counter">
+          <input type="text" value="0" class="count" id="cactuarValue" />
+          <input type="button" value="-" class="decrement" />
+          <input type="button" value="+" class="increment" />
+        </div>
+        <div class="species-progress">
+          <h3 class="species"></h3>
+          <div class="blank"></div>
+        </div>
+      </div>  -->

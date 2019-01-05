@@ -1,0 +1,378 @@
+body {
+  color: white;
+  background-color: rgb(31, 33, 35);
+}
+
+h1 {
+  font-family: cursive, calibri, helvetica, arial;
+  text-align: center;
+}
+
+h2 {
+  font-family: Helvetica Neue, calibri, helvetica, arial;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: Helvetica Neue, calibri, helvetica, arial;
+  font-weight: 125;
+  letter-spacing: 1px;
+}
+
+.note {
+  font-family: Helvetica Neue, calibri, helvetica, arial;
+  font-weight: 125;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.lastNote {
+  font-family: Helvetica Neue, calibri, helvetica, arial;
+  font-weight: 125;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.fiend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border: 1px solid;
+  border-image: radial-gradient(ellipse at center, white, rgb(31, 33, 35)) 11 0%;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 25px;
+}
+
+.conquestFiend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  border: 1px solid;
+  border-image: radial-gradient(ellipse at center, white, rgb(31, 33, 35)) 11 0%;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 25px;
+}
+
+.originalFiend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border: 1px solid;
+  border-image: radial-gradient(ellipse at center, white, rgb(31, 33, 35)) 11 0%;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 25px;
+}
+
+.info {
+  font-family: Helvetica Neue, calibri, helvetica, arial;
+  font-weight: 125;
+  letter-spacing: 1px;
+  margin: 5px;
+  width: 615px;
+}
+
+.area-conquest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border: 1px solid;
+  border-image: radial-gradient(ellipse at center, white, rgb(31, 33, 35)) 11 0%;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 25px;
+}
+
+#dingo,
+#waterFlan,
+#dinonix,
+#yellowElement,
+#kilikaConquest,
+#ipiria,
+#whiteElement,
+#vouivre,
+#dualHorn,
+#raptor,
+#thunderFlan,
+#lamashtu,
+#garuda,
+#garm,
+#biteBug,
+#bunyip,
+#ochu,
+#melusine,
+#buer,
+#kusariqqu,
+#ironGiant,
+#thunderPlainsConquest,
+#iguion,
+#evilEye,
+#blueElement,
+#mafdet,
+#chimera,
+#sandWolf,
+#mushussu,
+#sandWorm,
+#bikanelConquest,
+#nebiros,
+#shred,
+#ogre,
+#chimeraBrain,
+#calmLandsConquest,
+#imp,
+#nidhogg,
+#valaha,
+#ghost,
+#stolenFaythCavernConquest,
+#ahriman,
+#grenade,
+#grendel,
+#mandragora,
+#splasher,
+#maelspike,
+#exoray,
+#geminiA,
+#demonolith,
+#barbatos,
+#behemothKing,
+#zaurus,
+#blackElement,
+#puroboros,
+#machea,
+#masterTonberry,
+#omegaDungeonConquest,
+#malboroMenace,
+#coeurlregina,
+#cactuarKing,
+#abyssWorm,
+#donTonberry,
+#abaddon {
+  background-color: rgb(61, 62, 64);
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(rgb(31, 33, 35)),
+    to(rgb(31, 33, 35)),
+    color-stop(50%, rgb(61, 62, 64))
+  );
+}
+
+#condor,
+#besaidConquest,
+#killerBee,
+#ragora,
+#miihenFang,
+#floatingEye,
+#raldo,
+#bomb,
+#miihenHighroadConquest,
+#gandarewa,
+#redElement,
+#funguar,
+#mushroomRockRoadConquest,
+#simurgh,
+#snowFlan,
+#basilisk,
+#djoseRoadConquest,
+#aerouge,
+#goldElement,
+#larva,
+#qactuar,
+#snowWolf,
+#wasp,
+#iceFlan,
+#murussu,
+#xiphos,
+#macalaniaConquest,
+#alcyone,
+#zuu,
+#cactuar,
+#skoll,
+#flameFlan,
+#anacondaur,
+#coeurl,
+#malboro,
+#yowie,
+#darkElement,
+#thorn,
+#epaaj,
+#tonberry,
+#bandersnatch,
+#darkFlan,
+#grat,
+#bashura,
+#behemoth,
+#achelous,
+#mtGagazetConquest,
+#wraith,
+#geminiB,
+#greatMalboro,
+#adamantoise,
+#insideSinConquest,
+#floatingDeath,
+#halma,
+#spirit,
+#masterCoeurl,
+#varuna,
+#stratoavis,
+#kottos,
+#jormungand,
+#espada,
+#chimerageist,
+#catoblepas,
+#vorban {
+  background-color: rgb(61, 62, 64);
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(rgb(31, 33, 35)),
+    to(rgb(31, 33, 35)),
+    color-stop(50%, rgb(44, 45, 47))
+  );
+}
+
+.name {
+  width: 255px;
+  margin-left: 60px;
+}
+
+.conquest-completion {
+  width: 125px;
+}
+
+.count,
+.checkBox {
+  height: 50px;
+  width: 50px;
+  border: solid 3px #437dd4;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.increment {
+  position: relative;
+  bottom: 20px;
+  right: 54px;
+  height: 25px;
+  width: 25px;
+  border: solid 1.5px #c1272d;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.decrement {
+  position: relative;
+  top: 20px;
+  right: 63px;
+  height: 25px;
+  width: 25px;
+  border: solid 1.5px #c1272d;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.species,
+.conquest-complete {
+  margin-right: 20px;
+  width: 133px;
+  text-align: right;
+}
+
+.conquest-completion {
+  position: relative;
+  width: 114px;
+}
+
+.check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 85px;
+}
+
+.check-inner {
+  stroke-dasharray: 669;
+  stroke-dashoffset: 669;
+  stroke: green;
+  stroke-width: 20px;
+  fill: transparent;
+  stroke-linecap: round;
+  transition: fill 500ms ease-in;
+}
+
+.check-inner-animate-in {
+  fill: lightgreen;
+  animation: dash 200ms linear;
+  animation-fill-mode: forwards;
+}
+
+.check-inner-animate-out {
+  animation: dash-out 500ms linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 669;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-out {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 669;
+  }
+}
+
+.species-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+#container {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
+.fiend-img {
+  width: 35px;
+  height: 35px;
+}
+
+.blank {
+  width: 35px;
+  height: 35px;
+}
+
+.fiendInfo {
+  margin-right: 60px;
+  width: 615px;
+}
