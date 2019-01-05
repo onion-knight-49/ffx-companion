@@ -37,7 +37,7 @@ allFiends.forEach(fiend => {
       strokeWidth: 8,
       easing: 'easeInOut',
       duration: 100,
-      color: '#c1272d',
+      color: 'rgb(157, 33, 40)',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null

@@ -78,8 +78,8 @@ h3 {
   font-family: Helvetica Neue, calibri, helvetica, arial;
   font-weight: 125;
   letter-spacing: 1px;
-  margin: 5px;
-  width: 615px;
+  margin: 2px;
+  width: 650px;
 }
 
 .area-conquest {
@@ -157,7 +157,14 @@ h3 {
 #cactuarKing,
 #abyssWorm,
 #donTonberry,
-#abaddon {
+#abaddon,
+#fenrir,
+#pteryx,
+#vidatu,
+#jumboFlan,
+#tanket,
+#sleepSprout,
+#juggernaut {
   background-color: rgb(61, 62, 64);
   background: -webkit-gradient(
     linear,
@@ -232,7 +239,14 @@ h3 {
 #espada,
 #chimerageist,
 #catoblepas,
-#vorban {
+#vorban,
+#ornitholestes,
+#hornet,
+#oneEye,
+#negaElement,
+#fafnir,
+#bombKing,
+#ironclad {
   background-color: rgb(61, 62, 64);
   background: -webkit-gradient(
     linear,
@@ -257,9 +271,11 @@ h3 {
 .checkBox {
   height: 50px;
   width: 50px;
-  border: solid 3px #437dd4;
+  border: solid 3px rgb(36, 81, 145);
   border-radius: 100%;
   text-align: center;
+  background-color: rgb(23, 24, 27);
+  color: white;
 }
 
 .increment {
@@ -268,10 +284,12 @@ h3 {
   right: 54px;
   height: 25px;
   width: 25px;
-  border: solid 1.5px #c1272d;
+  border: solid 1.5px rgb(157, 33, 40);
   border-radius: 100%;
   text-align: center;
   cursor: pointer;
+  background-color: rgb(23, 24, 27);
+  color: white;
 }
 
 .decrement {
@@ -280,10 +298,12 @@ h3 {
   right: 63px;
   height: 25px;
   width: 25px;
-  border: solid 1.5px #c1272d;
+  border: solid 1.5px rgb(157, 33, 40);
   border-radius: 100%;
   text-align: center;
   cursor: pointer;
+  background-color: rgb(23, 24, 27);
+  color: white;
 }
 
 .species,
@@ -356,6 +376,11 @@ h3 {
   height: 35px;
 }
 
+.conquestIcon {
+  width: 65px;
+  height: 65px;
+}
+
 #container {
   position: absolute;
   width: 35px;
@@ -367,6 +392,11 @@ h3 {
   height: 35px;
 }
 
+.conquest-img {
+  width: 65px;
+  height: 65px;
+}
+
 .blank {
   width: 35px;
   height: 35px;
@@ -374,5 +404,8 @@ h3 {
 
 .fiendInfo {
   margin-right: 60px;
-  width: 615px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
