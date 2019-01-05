@@ -79,7 +79,7 @@ h3 {
   font-weight: 125;
   letter-spacing: 1px;
   margin: 2px;
-  width: 650px;
+  width: 705px;
 }
 
 .area-conquest {
@@ -164,7 +164,11 @@ h3 {
 #jumboFlan,
 #tanket,
 #sleepSprout,
-#juggernaut {
+#juggernaut,
+#earthEater,
+#catastrophe,
+#neslug,
+#shinryu {
   background-color: rgb(61, 62, 64);
   background: -webkit-gradient(
     linear,
@@ -246,7 +250,11 @@ h3 {
 #negaElement,
 #fafnir,
 #bombKing,
-#ironclad {
+#ironclad,
+#greaterSphere,
+#thuban,
+#ultimaBuster,
+#nemesis {
   background-color: rgb(61, 62, 64);
   background: -webkit-gradient(
     linear,
@@ -404,7 +412,7 @@ h3 {
 
 .fiendInfo {
   margin-right: 60px;
-  width: 650px;
+  width: 705px;
   display: flex;
   flex-direction: column;
   align-items: center;
